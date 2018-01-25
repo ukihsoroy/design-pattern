@@ -25,7 +25,7 @@
 ### 6.案例
 **1.calculator: 使用简单工厂模式, 创建控制台计算器**
 
-[UML类图](uml/calculator.png)
+![UML类图](uml/calculator.png)
 
 - 创建Calculator抽象类, 添加计算抽象方法, 添加数值属性, get set方法
 ```
