@@ -29,7 +29,7 @@ public final class OperationFactory {
     /**
      * 常量类
      */
-    private final class SymbolConstants{
+    private final class SymbolConstants {
 
         private static final String ADD = "+";
 

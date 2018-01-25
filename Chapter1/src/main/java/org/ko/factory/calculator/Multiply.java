@@ -7,7 +7,6 @@ import java.math.BigDecimal;
  */
 public class Multiply extends OperationAbstract {
 
-
     @Override
     public BigDecimal calculate() {
         return this.getNumber1().multiply(this.getNumber2());
