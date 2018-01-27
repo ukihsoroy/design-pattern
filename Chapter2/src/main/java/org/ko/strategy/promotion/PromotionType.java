@@ -2,6 +2,9 @@ package org.ko.strategy.promotion;
 
 import java.util.Objects;
 
+/**
+ * 促销手段样例
+ */
 public enum PromotionType {
 
     CashNormal(1, "CashNormal", "原价"),
@@ -20,6 +23,11 @@ public enum PromotionType {
         this.description = description;
     }
 
+    /**
+     * 通过编码获取促销手段
+     * @param code 促销手段编码
+     * @return
+     */
     public static String findClazz(Integer code) {
         for (PromotionType type : PromotionType.values()) {
             if (Objects.equals(code, type.code)) {

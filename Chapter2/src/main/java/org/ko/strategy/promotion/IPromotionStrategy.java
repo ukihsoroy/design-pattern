@@ -7,7 +7,14 @@ import java.math.BigDecimal;
  */
 public interface IPromotionStrategy {
 
+    /**
+     * 计算逻辑
+     */
     BigDecimal promotionAlgorithm();
 
+    /**
+     * 存入价钱
+     * @param price
+     */
     void setPrice(BigDecimal price);
 }

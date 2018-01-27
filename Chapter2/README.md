@@ -67,3 +67,250 @@
 ## 二.实例Demo
 
 ### 1.使用策略模式实现超市促销
+
+1. 需求
+
+    - 原价返回
+    - 打折
+    - 满减
+![促销UML类图](images/Promotion.png)
+    
+2. 策略类(IPromotionStrategy)定义
+
+```
+    /**
+     * 促销策略类
+     */
+    public interface IPromotionStrategy {
+    
+        /**
+         * 计算逻辑
+         */
+        BigDecimal promotionAlgorithm();
+    
+        /**
+         * 存入价钱
+         * @param price
+         */
+        void setPrice(BigDecimal price);
+    }
+```
+
+3. 根据不同情况实现策略类
+
+```
+    /**
+     * 原价
+     */
+    public class CashNormal implements IPromotionStrategy{
+    
+        private BigDecimal price;
+    
+        @Override
+        public BigDecimal promotionAlgorithm() {
+            //原价返回
+            return this.price;
+        }
+    
+        public void setPrice(BigDecimal price) {
+            this.price = price;
+        }
+    }
+    
+    
+    /**
+     * 打折
+     */
+    public class CashRebate implements IPromotionStrategy {
+    
+        private BigDecimal price = BigDecimal.ZERO;
+    
+        private BigDecimal rate;
+    
+        public CashRebate(BigDecimal rate) {
+            this.rate = rate;
+        }
+    
+        @Override
+        public BigDecimal promotionAlgorithm() {
+            //TODO 打折逻辑实现
+        }
+    
+        public void setPrice(BigDecimal price) {
+            this.price = price;
+        }
+    }
+    
+    
+    /**
+     * 满减
+     */
+    public class CashReturn implements IPromotionStrategy {
+    
+        private BigDecimal price;
+    
+        private BigDecimal minPrice;
+    
+        private BigDecimal subPrice;
+    
+        public CashReturn(BigDecimal minPrice, BigDecimal subPrice) {
+            this.minPrice = minPrice;
+            this.subPrice = subPrice;
+        }
+    
+        @Override
+        public BigDecimal promotionAlgorithm() {
+            //TODO 满减逻辑实现
+        }
+    
+        public void setPrice(BigDecimal price) {
+            this.price = price;
+        }
+    }
+
+```
+
+4. 创建打折上下文(PromotionContext), 维护使用促销模式
+
+```
+    public class PromotionContext {
+    
+        /**
+         * 策略实现类包
+         */
+        private static final String PACKAGE_NAME = "org.ko.strategy.promotion";
+    
+        /**
+         * 组合策略类
+         */
+        private IPromotionStrategy promotionStrategy;
+    
+        /**
+         * 获取促销后价钱
+         * @return
+         */
+        public BigDecimal getPrice () {
+            return this.promotionStrategy.promotionAlgorithm();
+        }
+    
+        /**
+         * 创建促销手段
+         * @param code 对应促销模式编码
+         * @param args 对应促销参数
+         */
+        public void newPromotion (Integer code, Object... args) {
+            //根据促销模式编码获取促销模式对应类名称
+            String clazz = PromotionType.findClazz(code);
+            try {
+                //通过反射获取促销模式的对象
+                this.promotionStrategy = (IPromotionStrategy)Class.forName(PACKAGE_NAME + "." + clazz)
+                        .getDeclaredConstructor(getClasses(args)).newInstance(args);
+            } catch (InstantiationException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                e.printStackTrace();
+            } catch (NoSuchMethodException e) {
+                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+    
+        /**
+         * 设置打折前的价格
+         * @param price
+         */
+        public void setPrice (BigDecimal price) {
+            this.promotionStrategy.setPrice(price);
+        }
+    
+        /**
+         * 获取Class
+         * @param args
+         * @return
+         */
+        private Class[] getClasses (Object... args) {
+            Class[] classes = new Class[args.length];
+            for (int i = 0; i < args.length; i ++) {
+                classes[i] = args[i].getClass();
+            }
+            return classes;
+        }
+    
+    }
+```
+    - 这里使用反射维护实例对象, 相关知识这里不再介绍.
+
+5. 创建枚举维护促销样例
+
+```
+    /**
+     * 促销手段样例
+     */
+    public enum PromotionType {
+    
+        CashNormal(1, "CashNormal", "原价"),
+        CashRebate(2, "CashRebate", "打折"),
+        CashReturn(3, "CashReturn", "满减");
+    
+        private Integer code;
+    
+        private String clazz;
+    
+        private String description;
+    
+        PromotionType(Integer code, String clazz, String description) {
+            this.code = code;
+            this.clazz = clazz;
+            this.description = description;
+        }
+    
+        /**
+         * 通过编码获取促销手段
+         * @param code 促销手段编码
+         * @return
+         */
+        public static String findClazz(Integer code) {
+            for (PromotionType type : PromotionType.values()) {
+                if (Objects.equals(code, type.code)) {
+                    return type.clazz;
+                }
+            }
+            return null;
+        }
+    }
+
+```
+
+6. 测试
+
+```
+    public static void main(String[] args) {
+        //初始化上下文
+        PromotionContext context = new PromotionContext();
+
+        //测试无促销
+        context.newPromotion(1);
+        context.setPrice(new BigDecimal("200"));
+        BigDecimal price = context.getPrice();
+        System.out.println(price);
+
+        //测试打折
+        context.newPromotion(2, new BigDecimal("0.8"));
+        context.setPrice(new BigDecimal("200"));
+        price = context.getPrice();
+        System.out.println(price);
+
+        //测试满减
+        context.newPromotion(3, new BigDecimal("300"), new BigDecimal("100"));
+        context.setPrice(new BigDecimal("200"));
+        price = context.getPrice();
+        System.out.println(price);
+        context.setPrice(new BigDecimal("300"));
+        price = context.getPrice();
+        System.out.println(price);
+
+    }
+```
