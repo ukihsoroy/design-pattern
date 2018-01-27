@@ -11,6 +11,10 @@ public abstract class OperationAbstract {
 
     private BigDecimal number2;
 
+    /**
+     * 由子类实现运算规则
+     * @return
+     */
     public abstract BigDecimal calculate();
 
     public BigDecimal getNumber1() {
