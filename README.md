@@ -10,7 +10,7 @@
 
 ### 2. 结构型
 
-- adapter Class/Object: [#适配器模式]()
+- adapter: [#适配器模式]()
 - bridge: [#桥接模式]()
 - composite: [#组合模式]()
 - decorator: [#装饰模式](https://www.jianshu.com/p/25eaeae4b1fd)

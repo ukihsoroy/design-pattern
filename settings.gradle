@@ -1,0 +1,13 @@
+rootProject.name = 'design-pattern'
+
+include 'abstract-factory'
+include 'adapter'
+include 'chain-of-responsibility'
+include 'decorator'
+include 'factory-method'
+include 'observer'
+include 'proxy'
+include 'strategy'
+
+
+
