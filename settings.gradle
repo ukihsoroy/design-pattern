@@ -49,3 +49,8 @@ include 'strategy'
  */
 include 'template-method'
 
+/**
+ * 设计原则
+ */
+include 'design-principle'
+
