@@ -14,7 +14,7 @@ public class Test {
         System.out.println(
                 "课程ID： " + j1.getId() +
                         "课程名字： " + j1.getName() +
-                        "课程原价钱： " + j1.getOriginPrice() +
-                        "课程折后价钱：" + j1.getPrice());
+                        "课程原价钱： " + j1.getPrice() +
+                        "课程折后价钱：" + j1.getDiscountPrice());
     }
 }
