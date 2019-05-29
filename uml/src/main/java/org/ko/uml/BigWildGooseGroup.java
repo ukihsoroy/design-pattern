@@ -18,4 +18,12 @@ public class BigWildGooseGroup {
     public void vfly() {
         System.out.println("V字飞行");
     }
+
+    public List<BigWildGoose> getBigWildGooses() {
+        return bigWildGooses;
+    }
+
+    public void setBigWildGooses(List<BigWildGoose> bigWildGooses) {
+        this.bigWildGooses = bigWildGooses;
+    }
 }

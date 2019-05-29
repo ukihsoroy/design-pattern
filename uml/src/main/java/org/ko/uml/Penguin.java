@@ -5,5 +5,14 @@ package org.ko.uml;
  */
 public class Penguin extends Bird {
 
-    public Weather weather;
+    //气候
+    public Climate climate;
+
+    public Climate getClimate() {
+        return climate;
+    }
+
+    public void setClimate(Climate climate) {
+        this.climate = climate;
+    }
 }
