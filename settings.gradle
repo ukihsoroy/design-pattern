@@ -12,4 +12,5 @@ include 'template-method'
 include 'design-principle'
 include 'uml'
 include 'simple-factory'
+include 'builder'
 
