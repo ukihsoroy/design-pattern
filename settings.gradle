@@ -13,4 +13,5 @@ include 'design-principle'
 include 'uml'
 include 'simple-factory'
 include 'builder'
+include 'singleton'
 
