@@ -1,0 +1,56 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) 
+// Source File Name:   EnumInstance.java
+
+package org.ko.singleton.byenum;
+
+//final的
+public final class EnumInstance extends Enum
+{
+
+    public static EnumInstance[] values()
+    {
+        return (EnumInstance[])$VALUES.clone();
+    }
+
+    public static EnumInstance valueOf(String name)
+    {
+        return (EnumInstance)Enum.valueOf(org/ko/singleton/byenum/EnumInstance, name);
+    }
+
+    //私有构造器
+    private EnumInstance(String s, int i)
+    {
+        super(s, i);
+    }
+
+    public Object getData()
+    {
+        return data;
+    }
+
+    public void setData(Object data)
+    {
+        this.data = data;
+    }
+
+    public static EnumInstance getInstance()
+    {
+        return INSTANCE;
+    }
+
+    //static final
+    public static final EnumInstance INSTANCE;
+    private Object data;
+    private static final EnumInstance $VALUES[];
+
+    //通过静态块加载它，比较像饿汉模式
+    static 
+    {
+        INSTANCE = new EnumInstance("INSTANCE", 0);
+        $VALUES = (new EnumInstance[] {
+            INSTANCE
+        });
+    }
+}

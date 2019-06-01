@@ -1,10 +1,11 @@
 package org.ko.singleton;
 
+import org.ko.singleton.byenum.EnumInstance;
 import org.ko.singleton.hungry.HungrySingleton;
 
 import java.io.*;
 
-public class SerializableTest {
+public class SerializableTest1 {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         HungrySingleton instance = HungrySingleton.getInstance();
@@ -21,5 +22,6 @@ public class SerializableTest {
         System.out.println(newInstance);
 
         System.out.println(instance == newInstance);
+
     }
 }
