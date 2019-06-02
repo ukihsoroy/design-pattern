@@ -2,7 +2,7 @@ package org.ko.factorymethod;
 
 public class FEVideoFactory extends VideoFactory {
     @Override
-    public Video getVideo() {
+    public FEVideo getVideo() {
         return new FEVideo();
     }
 }
