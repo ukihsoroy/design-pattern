@@ -15,4 +15,5 @@ include 'simple-factory'
 include 'builder'
 include 'singleton'
 include 'prototype'
+include 'facade'
 
