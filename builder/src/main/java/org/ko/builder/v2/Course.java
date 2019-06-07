@@ -1,5 +1,8 @@
 package org.ko.builder.v2;
 
+/**
+ * 课程类
+ */
 public class Course {
 
     private String courseName;
@@ -32,6 +35,9 @@ public class Course {
                 '}';
     }
 
+    /**
+     * 课程静态builder类
+     */
     public static class CourseBuilder {
 
         private String courseName;

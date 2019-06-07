@@ -1,5 +1,8 @@
 package org.ko.builder.v1;
 
+/**
+ * 建造者的具体实现
+ */
 public class CourseActualBuilder extends CourseBuilder {
 
     private Course course = new Course();

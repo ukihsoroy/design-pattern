@@ -1,5 +1,8 @@
 package org.ko.builder.v1;
 
+/**
+ * 建造者的具体实现与应用
+ */
 public abstract class CourseBuilder {
 
     public abstract void buildCourseName(String courseName);

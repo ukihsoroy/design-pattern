@@ -1,5 +1,8 @@
 package org.ko.builder.v1;
 
+/**
+ * 课程教练类
+ */
 public class Coach {
 
     private CourseBuilder courseBuilder;

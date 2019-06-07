@@ -1,5 +1,8 @@
 package org.ko.builder.v1;
 
+/**
+ * 具体产品的实例：课程
+ */
 public class Course {
 
     private String courseName;

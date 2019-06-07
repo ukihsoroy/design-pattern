@@ -1,5 +1,8 @@
 package org.ko.builder.v2;
 
+/**
+ * 测试与应用
+ */
 public class Test {
     public static void main(String[] args) {
         Course course1 = new Course.CourseBuilder()
