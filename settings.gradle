@@ -16,4 +16,5 @@ include 'builder'
 include 'singleton'
 include 'prototype'
 include 'facade'
+include 'fiyweight'
 
