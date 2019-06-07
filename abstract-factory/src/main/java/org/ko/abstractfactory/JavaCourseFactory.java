@@ -1,13 +1,14 @@
 package org.ko.abstractfactory;
 
+//Java课程工厂
 public class JavaCourseFactory implements ICourseFactory {
     @Override
-    public Video getVideo() {
+    public JavaVideo getVideo() {
         return new JavaVideo();
     }
 
     @Override
-    public Article getArticle() {
+    public JavaArticle getArticle() {
         return new JavaArticle();
     }
 }

@@ -1,5 +1,6 @@
 package org.ko.abstractfactory;
 
+//Python文章
 public class PythonArticle extends Article {
     @Override
     public void produce() {

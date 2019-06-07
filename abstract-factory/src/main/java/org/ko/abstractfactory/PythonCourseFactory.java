@@ -1,5 +1,6 @@
 package org.ko.abstractfactory;
 
+//Python课程工厂
 public class PythonCourseFactory implements ICourseFactory {
     @Override
     public Video getVideo() {

@@ -1,5 +1,6 @@
 package org.ko.abstractfactory;
 
+//Java视频
 public class JavaVideo extends Video {
 
     @Override
