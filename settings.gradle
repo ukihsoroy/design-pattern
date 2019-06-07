@@ -17,4 +17,5 @@ include 'singleton'
 include 'prototype'
 include 'facade'
 include 'fiyweight'
+include 'composite'
 
