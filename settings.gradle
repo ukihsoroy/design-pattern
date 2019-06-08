@@ -18,4 +18,5 @@ include 'prototype'
 include 'facade'
 include 'fiyweight'
 include 'composite'
+include 'bridge'
 
