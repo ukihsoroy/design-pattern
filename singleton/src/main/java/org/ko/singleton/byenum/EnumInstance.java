@@ -2,6 +2,9 @@ package org.ko.singleton.byenum;
 
 public enum EnumInstance {
 
+    /**
+     * 具体的单例实例
+     */
     INSTANCE {
         protected void  printTest () {
             System.out.println("K.O print Test!");

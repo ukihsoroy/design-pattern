@@ -17,8 +17,9 @@ public class ReflectTest3 {
         Constructor constructor = objectClass.getDeclaredConstructor(String.class, int.class);
         constructor.setAccessible(true);
 
-        //先反射后创建就会出现问题
+        //反射对象
         EnumInstance newInstance = (EnumInstance) constructor.newInstance("K.O", 1);
+        //实例对象
         EnumInstance instance = EnumInstance.getInstance();
 
         System.out.println(instance);

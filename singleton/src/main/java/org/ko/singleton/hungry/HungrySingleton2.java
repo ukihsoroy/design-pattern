@@ -6,15 +6,15 @@ import java.io.Serializable;
  * 饿汉式
  * 一开始就new好了
  */
-public class HungrySingleton implements Serializable {
+public class HungrySingleton2 implements Serializable {
 
-    private final static HungrySingleton hungrySingleton;
+    private final static HungrySingleton2 hungrySingleton;
 
     static {
-        hungrySingleton = new HungrySingleton();
+        hungrySingleton = new HungrySingleton2();
     }
 
-    public static HungrySingleton getInstance() {
+    public static HungrySingleton2 getInstance() {
         return hungrySingleton;
     }
 
@@ -28,7 +28,7 @@ public class HungrySingleton implements Serializable {
         return hungrySingleton;
     }
 
-    private HungrySingleton () {
+    private HungrySingleton2() {
         /**
          * 对一开始就创建好了的类有效
          */

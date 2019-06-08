@@ -17,12 +17,12 @@ public class ReflectTest2 {
         constructor.setAccessible(true);
 
         //先创建后反射没有问题
-//        LazySingleton2 instance = LazySingleton2.getInstance();
-//        LazySingleton2 newInstance = (LazySingleton2) constructor.newInstance();
+        LazySingleton2 instance = LazySingleton2.getInstance();
+        LazySingleton2 newInstance = (LazySingleton2) constructor.newInstance();
 
         //先反射后创建就会出现问题
-        LazySingleton2 newInstance = (LazySingleton2) constructor.newInstance();
-        LazySingleton2 instance = LazySingleton2.getInstance();
+//        LazySingleton2 newInstance = (LazySingleton2) constructor.newInstance();
+//        LazySingleton2 instance = LazySingleton2.getInstance();
 
         System.out.println(instance);
         System.out.println(newInstance);

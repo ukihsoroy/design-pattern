@@ -1,6 +1,6 @@
 package org.ko.singleton;
 
-import org.ko.singleton.hungry.HungrySingleton;
+import org.ko.singleton.hungry.HungrySingleton2;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -11,16 +11,16 @@ import java.lang.reflect.InvocationTargetException;
 public class ReflectTest1 {
 
     public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
-        Class objectClass = HungrySingleton.class;
+        Class objectClass = HungrySingleton2.class;
 
         Constructor constructor = objectClass.getDeclaredConstructor();
         constructor.setAccessible(true);
 
         //反射创建
-        HungrySingleton instance = HungrySingleton.getInstance();
+        HungrySingleton2 instance = HungrySingleton2.getInstance();
 
         //正常创建
-        HungrySingleton newInstance = (HungrySingleton) constructor.newInstance();
+        HungrySingleton2 newInstance = (HungrySingleton2) constructor.newInstance();
 
         System.out.println(instance);
         System.out.println(newInstance);

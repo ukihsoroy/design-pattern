@@ -14,8 +14,5 @@ public class LazySingleton1 {
         }
         return lazySingleton1;
     }
-
-
-
     private LazySingleton1() {}
 }
