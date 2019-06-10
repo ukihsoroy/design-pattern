@@ -1,4 +1,4 @@
-package org.ko.proxy.dynamic.jdk.simple;
+package org.ko.proxy.demo1.dynamic.jdk.simple;
 
 import org.apache.commons.io.FileUtils;
 

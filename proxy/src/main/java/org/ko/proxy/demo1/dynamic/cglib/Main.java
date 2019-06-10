@@ -1,4 +1,4 @@
-package org.ko.proxy.dynamic.cglib;
+package org.ko.proxy.demo1.dynamic.cglib;
 
 public class Main {
 

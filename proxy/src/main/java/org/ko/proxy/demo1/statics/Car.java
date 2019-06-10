@@ -1,4 +1,4 @@
-package org.ko.proxy.statics;
+package org.ko.proxy.demo1.statics;
 
 import java.util.Random;
 

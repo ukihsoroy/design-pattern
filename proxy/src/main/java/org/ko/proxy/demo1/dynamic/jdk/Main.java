@@ -1,7 +1,7 @@
-package org.ko.proxy.dynamic.jdk;
+package org.ko.proxy.demo1.dynamic.jdk;
 
-import org.ko.proxy.statics.Car;
-import org.ko.proxy.statics.MoveAble;
+import org.ko.proxy.demo1.statics.Car;
+import org.ko.proxy.demo1.statics.MoveAble;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;

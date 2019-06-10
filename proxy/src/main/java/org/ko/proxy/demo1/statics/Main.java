@@ -1,4 +1,4 @@
-package org.ko.proxy.statics;
+package org.ko.proxy.demo1.statics;
 
 public class Main {
 

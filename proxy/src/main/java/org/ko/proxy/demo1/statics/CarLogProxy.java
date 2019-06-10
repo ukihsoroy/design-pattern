@@ -1,4 +1,4 @@
-package org.ko.proxy.statics;
+package org.ko.proxy.demo1.statics;
 
 /**
  * 使用聚合的方式实现静态代理

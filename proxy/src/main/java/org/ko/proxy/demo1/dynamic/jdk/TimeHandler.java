@@ -1,4 +1,4 @@
-package org.ko.proxy.dynamic.jdk;
+package org.ko.proxy.demo1.dynamic.jdk;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

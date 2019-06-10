@@ -1,8 +1,8 @@
-package org.ko.proxy.dynamic.jdk.simple;
+package org.ko.proxy.demo1.dynamic.jdk.simple;
 
 
-import org.ko.proxy.statics.Car;
-import org.ko.proxy.statics.MoveAble;
+import org.ko.proxy.demo1.statics.Car;
+import org.ko.proxy.demo1.statics.MoveAble;
 
 public class Main {
     public static void main(String[] args) {
