@@ -1,4 +1,4 @@
-package org.ko.template.method;
+package org.ko.template.method.demo1;
 
 public class Test {
 
