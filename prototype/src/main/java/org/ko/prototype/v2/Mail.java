@@ -1,6 +1,7 @@
 package org.ko.prototype.v2;
 
 /**
+ * Mail邮件类
  * 实现 Cloneable 接口
  * 重写 Object.clone() 方法
  */

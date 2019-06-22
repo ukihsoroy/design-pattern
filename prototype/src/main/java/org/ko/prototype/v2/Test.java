@@ -1,5 +1,8 @@
 package org.ko.prototype.v2;
 
+/**
+ * 测试与应用
+ */
 public class Test {
 
     public static void main(String[] args) throws CloneNotSupportedException {

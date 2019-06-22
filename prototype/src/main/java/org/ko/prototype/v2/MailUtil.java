@@ -2,6 +2,9 @@ package org.ko.prototype.v2;
 
 import java.text.MessageFormat;
 
+/**
+ * Mail工具类
+ */
 public class MailUtil {
 
     public static void sendMail (Mail mail) {

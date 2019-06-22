@@ -5,7 +5,7 @@ import java.util.Date;
 public class Test2 {
 
     public static void main(String[] args) throws CloneNotSupportedException {
-        //浅克隆, 没办法克隆引用对象
+        //深克隆
         Date birthday = new Date(0l);
 
         Pig2 p1 = new Pig2("佩奇", birthday);

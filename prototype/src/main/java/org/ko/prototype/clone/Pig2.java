@@ -3,7 +3,7 @@ package org.ko.prototype.clone;
 import java.util.Date;
 
 /**
- * 浅克隆
+ * 深克隆
  */
 public class Pig2 implements Cloneable {
     private String name;
@@ -42,7 +42,7 @@ public class Pig2 implements Cloneable {
 
     @Override
     public String toString() {
-        return "Pig1{" +
+        return "Pig2{" +
                 "name='" + name + '\'' +
                 ", birthday=" + birthday +
                 '}' + super.toString();
