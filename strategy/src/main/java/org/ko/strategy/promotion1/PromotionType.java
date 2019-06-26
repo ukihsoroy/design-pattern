@@ -1,4 +1,4 @@
-package org.ko.strategy.promotion;
+package org.ko.strategy.promotion1;
 
 import java.util.Objects;
 
