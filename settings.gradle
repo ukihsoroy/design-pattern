@@ -20,4 +20,5 @@ include 'fiyweight'
 include 'composite'
 include 'bridge'
 include 'iterator'
+include 'interpreter'
 
