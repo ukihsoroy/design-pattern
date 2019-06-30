@@ -1,4 +1,4 @@
-package org.ko.observer.base;
+package org.ko.observer.d1.base;
 
 /**
  * 定义一个更新的接口方法给那些在目标发生改变的时候被通知的观察者对象调用

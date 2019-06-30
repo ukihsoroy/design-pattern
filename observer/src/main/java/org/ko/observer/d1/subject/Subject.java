@@ -1,8 +1,10 @@
-package org.ko.observer.demo;
+package org.ko.observer.d1.subject;
+
+
+import org.ko.observer.d1.observer.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 /**
  * 目标对象，它知道观察它的观察者
@@ -10,17 +12,13 @@ import java.util.List;
  * @author Administrator
  *
  */
-public class WeatherSubject {
+public class Subject {
 
 	// 用来保存注册的观察者对象
 	private List<Observer> observers = new ArrayList<Observer>();
 	
+//	attach detach notifyObservers
 	
-	/**
-	 * 把订阅天气的人添加到订阅列表中
-	 * @param observer
-	 * @return
-	 */
 	public boolean attach (Observer observer) {
 		return observers.add(observer);
 	}
@@ -35,12 +33,11 @@ public class WeatherSubject {
 	}
 	
 	/**
-	 * 通知所有已经订阅了天气的人
+	 * 向所有注册的观察者发送消息
 	 */
-	protected void notifyObservers (String content) {
+	protected void notifyObservers () {
 		for (Observer observer : observers) {
 			observer.update(this);
-			observer.update(content);
 		}
 	}
 }

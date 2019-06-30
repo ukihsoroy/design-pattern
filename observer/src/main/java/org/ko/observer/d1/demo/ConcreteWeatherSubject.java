@@ -1,4 +1,4 @@
-package org.ko.observer.demo;
+package org.ko.observer.d1.demo;
 
 /**
  * 具体的目标对象

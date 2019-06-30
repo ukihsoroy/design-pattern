@@ -1,6 +1,4 @@
-package org.ko.observer.observer;
-
-import org.ko.designPattern.observer.subject.Subject;
+package org.ko.observer.d1.demo;
 
 /**
  * 这是一个观察者接口
@@ -11,8 +9,15 @@ import org.ko.designPattern.observer.subject.Subject;
 public interface Observer {
 
 	/**
+	 * 拉模型
 	 * 更新的接口
 	 * @param subject 传入目标的对象，方便获取相应的目标对象状态条
 	 */
-	public void update(Subject subject);
+	void update(WeatherSubject subject);
+
+	/**
+	 * 推模型
+	 * @param content
+	 */
+	void update(String content);
 }

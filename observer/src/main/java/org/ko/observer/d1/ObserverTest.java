@@ -1,7 +1,8 @@
-package org.ko.observer;
+package org.ko.observer.d1;
 
-import org.ko.designPattern.observer.demo.ConcreteObserver;
-import org.ko.designPattern.observer.demo.ConcreteWeatherSubject;
+
+import org.ko.observer.d1.demo.ConcreteObserver;
+import org.ko.observer.d1.demo.ConcreteWeatherSubject;
 
 public class ObserverTest {
 

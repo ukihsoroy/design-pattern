@@ -1,7 +1,8 @@
-package org.ko.observer.observer;
+package org.ko.observer.d1.observer;
 
-import org.ko.designPattern.observer.subject.ConcreteSubject;
-import org.ko.designPattern.observer.subject.Subject;
+
+import org.ko.observer.d1.subject.ConcreteSubject;
+import org.ko.observer.d1.subject.Subject;
 
 /**
  * 具体的观察者对象，实现更新的方法

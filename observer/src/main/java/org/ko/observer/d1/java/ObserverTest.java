@@ -1,4 +1,4 @@
-package org.ko.observer.java;
+package org.ko.observer.d1.java;
 
 public class ObserverTest {
 
