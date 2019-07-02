@@ -22,4 +22,6 @@ include 'bridge'
 include 'iterator'
 include 'interpreter'
 include 'memento'
+include 'command'
+include 'mediator'
 
