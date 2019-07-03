@@ -1,4 +1,4 @@
-package org.ko.cor.handler;
+package org.ko.cor.demo1.handler;
 
 /**
  * 价格处理人, 负责处理客户的责任申请

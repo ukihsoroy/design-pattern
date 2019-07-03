@@ -1,4 +1,4 @@
-package org.ko.cor.handler;
+package org.ko.cor.demo1.handler;
 
 public class Lead extends PriceHandler {
 

@@ -1,7 +1,7 @@
-package org.ko.cor;
+package org.ko.cor.demo1;
 
-import org.ko.designPattern.cor.handler.PriceHandler;
-import org.ko.designPattern.cor.handler.PriceHandlerFactory;
+import org.ko.cor.demo1.handler.PriceHandler;
+import org.ko.cor.demo1.handler.PriceHandlerFactory;
 
 import java.util.Random;
 

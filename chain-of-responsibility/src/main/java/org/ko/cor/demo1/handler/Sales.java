@@ -1,14 +1,14 @@
-package org.ko.cor.handler;
+package org.ko.cor.demo1.handler;
 
-public class CEO extends PriceHandler {
+public class Sales extends PriceHandler {
 
     @Override
     public void processDiscount(float discount) {
 
-        if (discount <= 0.55) {
+        if (discount <= 0.05) {
             System.out.format("%s批准了折扣: %.2f%n", this.getClass().getName(), discount);
         } else {
-            System.out.format("%s拒绝了折扣: %.2f%n", this.getClass().getName(), discount);
+            successor.processDiscount(discount);
         }
     }
 
