@@ -24,4 +24,6 @@ include 'interpreter'
 include 'memento'
 include 'command'
 include 'mediator'
+include 'visitor'
+include 'state'
 
