@@ -1,5 +1,8 @@
 package org.ko.facade;
 
+/**
+ * 积分校验子系统
+ */
 public class QualifyService {
 
     public boolean isAvailable (PointsGift pointsGift) {

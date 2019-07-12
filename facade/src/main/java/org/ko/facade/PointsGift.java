@@ -1,6 +1,10 @@
 package org.ko.facade;
 
+/**
+ * 礼物实体类
+ */
 public class PointsGift {
+
     private String name;
 
     public PointsGift(String name) {

@@ -1,5 +1,8 @@
 package org.ko.facade;
 
+/**
+ * 支付子系统
+ */
 public class PointsPaymentService {
     public boolean pay(PointsGift pointsGift) {
         //扣减积分

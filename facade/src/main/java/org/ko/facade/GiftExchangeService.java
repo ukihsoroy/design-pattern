@@ -1,6 +1,13 @@
 package org.ko.facade;
 
+/**
+ * 扣减积分门面类
+ */
 public class GiftExchangeService {
+
+    /**
+     * 模拟注入
+     */
     private QualifyService qualifyService = new QualifyService();
     private PointsPaymentService pointsPaymentService = new PointsPaymentService();
     private ShippingService shippingService = new ShippingService();
@@ -18,7 +25,7 @@ public class GiftExchangeService {
 //        this.shippingService = shippingService;
 //    }
 
-    public void giftExchane (PointsGift pointsGift) {
+    public void giftExchange (PointsGift pointsGift) {
         if (qualifyService.isAvailable(pointsGift)) {
             //资格校验通过
             if (pointsPaymentService.pay(pointsGift)) {
