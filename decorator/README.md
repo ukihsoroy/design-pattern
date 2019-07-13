@@ -11,7 +11,7 @@
 - 类型：结构型
 - UML类图
 
-![decorator1](https://github.com/sigmako/sigmako.github.io/tree/master/%E7%BB%8F%E5%85%B8%E6%9E%B6%E6%9E%84%E6%A1%88%E4%BE%8B%E4%B8%8E%E6%96%B9%E6%B3%95%E8%AE%BA/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/images/decorator1.png)
+![decorator1](./images/decorator1.png)
 
 - 样例实现
   
@@ -287,7 +287,7 @@ public class Test {
 
 - 样例UML类图
 
-![decorator2](https://github.com/sigmako/sigmako.github.io/tree/master/%E7%BB%8F%E5%85%B8%E6%9E%B6%E6%9E%84%E6%A1%88%E4%BE%8B%E4%B8%8E%E6%96%B9%E6%B3%95%E8%AE%BA/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/images/decorator2.png)
+![decorator2](./images/decorator2.png)
 
 - 注意:装饰者最上层的类是否使用抽象类，这个是看业务的。
 
@@ -307,7 +307,7 @@ public class Test {
 - BufferedReader
 - BufferInputStream/BufferOutputStream
 
-![decorator3](https://github.com/sigmako/sigmako.github.io/tree/master/%E7%BB%8F%E5%85%B8%E6%9E%B6%E6%9E%84%E6%A1%88%E4%BE%8B%E4%B8%8E%E6%96%B9%E6%B3%95%E8%AE%BA/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/images/decorator3.png)
+![decorator3](./images/decorator3.png)
 
 - Spring. TransactionAwareCacheDecorator
 - Mybatis. Cache
