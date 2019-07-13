@@ -1,5 +1,8 @@
 package org.ko.decorator.brekker.v2;
 
+/**
+ * 装饰者的具体实现
+ */
 public class SausageDecorator extends AbstractDecorator {
 
     public SausageDecorator(ABattercake aBattercake) {

@@ -1,7 +1,11 @@
 package org.ko.decorator.brekker.v2;
 
+/**
+ * 装饰着的抽象类
+ */
 public abstract class AbstractDecorator extends ABattercake {
 
+    //组合的煎饼对象
     private ABattercake aBattercake;
 
     public AbstractDecorator(ABattercake aBattercake) {
