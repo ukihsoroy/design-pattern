@@ -1,8 +1,5 @@
-package org.ko.adapter.extend;
+package org.ko.adapter.notebook;
 
-
-import org.ko.adapter.grouping.GBTowPlug;
-import org.ko.adapter.grouping.ThreePlugIf;
 
 /**
  * 采用继承方式的插座适配器
