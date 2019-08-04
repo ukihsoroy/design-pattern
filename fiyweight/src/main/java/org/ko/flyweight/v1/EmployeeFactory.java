@@ -23,4 +23,8 @@ public class EmployeeFactory {
         }
         return manager;
     }
+
+    public static int size() {
+        return EMPLOYEE_MAP.size();
+    }
 }

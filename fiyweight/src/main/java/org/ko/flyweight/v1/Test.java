@@ -17,5 +17,7 @@ public class Test {
             Manager manager = (Manager) EmployeeFactory.getManager(department);
             manager.report();
         }
+
+        System.out.println(EmployeeFactory.size());
     }
 }
