@@ -1,5 +1,8 @@
 package org.ko.composite.v1;
 
+/**
+ * 测试与应用
+ */
 public class Test {
 
     public static void main(String[] args) {
