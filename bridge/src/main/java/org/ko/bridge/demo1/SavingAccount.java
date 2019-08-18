@@ -1,5 +1,8 @@
 package org.ko.bridge.demo1;
 
+/**
+ * 活期账户实现类
+ */
 public class SavingAccount implements Account {
     @Override
     public SavingAccount openAccount() {

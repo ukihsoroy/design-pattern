@@ -1,5 +1,8 @@
 package org.ko.bridge.demo1;
 
+/**
+ * 农业银行实现类
+ */
 public class ABCBank extends Bank {
 
     public ABCBank (Account account) {

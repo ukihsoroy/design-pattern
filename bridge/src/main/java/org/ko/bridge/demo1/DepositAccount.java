@@ -1,5 +1,8 @@
 package org.ko.bridge.demo1;
 
+/**
+ * 定期账户实现类
+ */
 public class DepositAccount implements Account {
     @Override
     public DepositAccount openAccount() {

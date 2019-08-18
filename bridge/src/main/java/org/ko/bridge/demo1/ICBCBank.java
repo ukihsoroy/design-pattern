@@ -1,5 +1,8 @@
 package org.ko.bridge.demo1;
 
+/**
+ * 工商银行实现类
+ */
 public class ICBCBank extends Bank {
 
     public ICBCBank(Account account) {
