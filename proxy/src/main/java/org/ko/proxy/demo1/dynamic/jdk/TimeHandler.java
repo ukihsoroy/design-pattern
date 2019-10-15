@@ -3,6 +3,10 @@ package org.ko.proxy.demo1.dynamic.jdk;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
+/**
+ * 时间处理器
+ * @author zhiyuan.shen
+ */
 public class TimeHandler implements InvocationHandler{
 
     private Object target;
@@ -19,13 +23,14 @@ public class TimeHandler implements InvocationHandler{
      * @return 方法的返回值
      * @throws Throwable
      */
+    @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         long startTime = System.currentTimeMillis();
-        System.out.println("汽车开始行驶...");
+        System.out.println("car start...");
         method.invoke(target);
-        System.out.println("汽车结束行驶...");
+        System.out.println("car end...");
         long endTime = System.currentTimeMillis();
-        System.out.println("共耗时" + (endTime - startTime) + "毫秒！");
+        System.out.println("used " + (endTime - startTime) + " ms！");
         return null;
     }
 

@@ -29,9 +29,9 @@ public class Proxy {
 		}
 		
 		String str =
-		"package org.ko.designPattern.proxy.jdk.simple;\n\n" +
+		"package org.ko.proxy.demo1.dynamic.jdk.simple;\n\n" +
 		"import java.lang.reflect.Method;\n" +
-		"import org.ko.designPattern.proxy.jdk.simple.InvocationHandler;\n\n\n" +
+		"import org.ko.proxy.demo1.dynamic.jdk.simple.InvocationHandler;\n\n\n" +
 		"public class $Proxy0 implements " + clazz.getName() + " {\n\n" +
 		"  	private InvocationHandler handler;\n\n" +
 		"	public $Proxy0(InvocationHandler handler) {\n" +
@@ -68,7 +68,7 @@ public class Proxy {
 			ClassLoader cl = ClassLoader.getSystemClassLoader();
 
 			//��ȡclass����
-			Class clz = cl.loadClass("org.ko.designPattern.proxy.jdk.simple.$Proxy0");
+			Class clz = cl.loadClass("org.ko.proxy.demo1.dynamic.jdk.simple.$Proxy0");
 
 			//ͨ���������������󲢷���
 			return clz.getConstructor(InvocationHandler.class).newInstance(handler);

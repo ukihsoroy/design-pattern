@@ -6,6 +6,10 @@ import net.sf.cglib.proxy.MethodProxy;
 
 import java.lang.reflect.Method;
 
+/**
+ * 代理类
+ * @author zhiyuan.shen
+ */
 public class CglibProxy implements MethodInterceptor {
 
     private Enhancer enhancer = new Enhancer();
@@ -29,10 +33,11 @@ public class CglibProxy implements MethodInterceptor {
      * @return
      * @throws Throwable
      */
+    @Override
     public Object intercept(Object object, Method method, Object[] args, MethodProxy methodProxy) throws Throwable {
-        System.out.println("日志开始..");
+        System.out.println("log start..");
         methodProxy.invokeSuper(object, args);
-        System.out.println("日志结束..");
+        System.out.println("log end..");
         return null;
     }
 
