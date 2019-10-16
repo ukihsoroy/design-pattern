@@ -1,5 +1,8 @@
 package org.ko.template.method.demo1;
 
+/**
+ * 猴子
+ */
 public class Monkey extends AnimalAbstract {
 
     @Override

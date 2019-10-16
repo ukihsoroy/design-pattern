@@ -1,5 +1,8 @@
 package org.ko.template.method.demo1;
 
+/**
+ * 鱼
+ */
 public class Fish extends AnimalAbstract {
 
     @Override

@@ -1,5 +1,8 @@
 package org.ko.template.method.demo1;
 
+/**
+ * 老虎
+ */
 public class Tiger extends AnimalAbstract {
 
     @Override

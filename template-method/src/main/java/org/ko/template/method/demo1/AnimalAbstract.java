@@ -1,7 +1,13 @@
 package org.ko.template.method.demo1;
 
+/**
+ * 抽象类
+ */
 public abstract class AnimalAbstract {
 
+    /**
+     *
+     */
     public void life () {
         eat();
         sport();
