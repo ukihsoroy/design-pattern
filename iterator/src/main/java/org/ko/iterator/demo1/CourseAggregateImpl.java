@@ -3,6 +3,9 @@ package org.ko.iterator.demo1;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 具体的聚集类
+ */
 public class CourseAggregateImpl implements CourseAggregate {
 
 

@@ -2,6 +2,9 @@ package org.ko.iterator.demo1;
 
 import java.util.List;
 
+/**
+ * 具体的迭代器
+ */
 public class CourseIteratorImpl implements CourseIterator {
 
     private List<Course> courseList;

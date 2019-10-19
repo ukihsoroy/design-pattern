@@ -1,5 +1,8 @@
 package org.ko.iterator.demo1;
 
+/**
+ * 应用与测试类
+ */
 public class Test {
 
     public static void main(String[] args) {
