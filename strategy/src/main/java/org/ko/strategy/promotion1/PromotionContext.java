@@ -8,7 +8,7 @@ public class PromotionContext {
     /**
      * 策略实现类包
      */
-    private static final String PACKAGE_NAME = "org.ko.strategy.promotion";
+    private static final String PACKAGE_NAME = "org.ko.strategy.promotion1";
 
     /**
      * 组合策略类
