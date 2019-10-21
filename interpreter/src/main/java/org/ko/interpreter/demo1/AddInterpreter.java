@@ -1,5 +1,8 @@
 package org.ko.interpreter.demo1;
 
+/**
+ * 相加表达式
+ */
 public class AddInterpreter implements Interpreter {
 
     private Interpreter firstExpression, secondExpression;

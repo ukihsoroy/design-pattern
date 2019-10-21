@@ -1,5 +1,8 @@
 package org.ko.interpreter.demo1;
 
+/**
+ * 工具类
+ */
 public class OperatorUtil {
 
     public static boolean isOperator(String symbol) {

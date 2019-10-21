@@ -1,5 +1,9 @@
 package org.ko.interpreter.demo1;
 
+
+/**
+ * 数值型表达式
+ */
 public class NumberInterpreter implements Interpreter {
 
     private int number;

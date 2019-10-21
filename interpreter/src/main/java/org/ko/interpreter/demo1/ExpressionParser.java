@@ -2,6 +2,9 @@ package org.ko.interpreter.demo1;
 
 import java.util.Stack;
 
+/**
+ * 格式化表达式
+ */
 public class ExpressionParser {
 
     private Stack<Interpreter> stack = new Stack<>();

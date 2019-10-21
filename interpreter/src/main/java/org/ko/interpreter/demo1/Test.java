@@ -1,5 +1,8 @@
 package org.ko.interpreter.demo1;
 
+/**
+ * 测试类
+ */
 public class Test {
 
     public static void main(String[] args) {

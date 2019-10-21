@@ -1,5 +1,9 @@
 package org.ko.interpreter.demo1;
 
+
+/**
+ * 相乘规则表达式
+ */
 public class MultiInterpreter implements Interpreter {
 
     private Interpreter firstExpression, secondExpression;
