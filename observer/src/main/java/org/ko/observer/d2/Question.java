@@ -1,5 +1,8 @@
 package org.ko.observer.d2;
 
+/**
+ * 问题实体
+ */
 public class Question {
 
     private String username;

@@ -2,6 +2,9 @@ package org.ko.observer.d2;
 
 import java.util.Observable;
 
+/**
+ * 被观察对象实体
+ */
 public class Course extends Observable {
 
     private String courseName;
