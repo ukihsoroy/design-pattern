@@ -2,6 +2,9 @@ package org.ko.memento.demo1;
 
 import java.util.Stack;
 
+/**
+ * 备忘录管理类
+ */
 public class ArticleMementoManager {
 
     private final Stack<ArticleMemento> ARTICLE_MEMENTO_STACK = new Stack<>();

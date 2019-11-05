@@ -1,5 +1,8 @@
 package org.ko.memento.demo1;
 
+/**
+ * 备忘录类
+ */
 public class ArticleMemento {
 
     private String title;
