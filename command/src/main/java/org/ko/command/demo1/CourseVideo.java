@@ -1,5 +1,8 @@
 package org.ko.command.demo1;
 
+/**
+ * 命令接受类
+ */
 public class CourseVideo {
 
     private String name;
