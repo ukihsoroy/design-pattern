@@ -1,5 +1,8 @@
 package org.ko.mediator.demo1;
 
+/**
+ * 一起学习的同学
+ */
 public class User {
 
     private String name;
