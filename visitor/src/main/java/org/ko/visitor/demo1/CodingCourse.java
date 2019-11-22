@@ -1,5 +1,8 @@
 package org.ko.visitor.demo1;
 
+/**
+ * 具体的实现类，实战课程
+ */
 public class CodingCourse extends Course {
 
     private int price;

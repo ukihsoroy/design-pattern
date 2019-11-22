@@ -1,7 +1,5 @@
 package org.ko.strategy.promotion2;
 
-import sun.dc.pr.PRError;
-
 import java.util.HashMap;
 import java.util.Map;
 
