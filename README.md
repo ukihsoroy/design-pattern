@@ -1,6 +1,6 @@
 # 你不能不学的设计模式合集
 
-## 0x00.写在前面
+### 0x00.写在前面
 
 啰嗦几句，
 最早听说设计模式，还是听老师一次授课时提到的。
@@ -50,4 +50,8 @@
 - strategy: [#策略模式](https://segmentfault.com/a/1190000020746936)
 - visitor: [#访问者模式](https://segmentfault.com/a/1190000021091918)
 
-### 0x05.道阻且长，祝你们幸运。
+### 0x05.代码地址
+
+- `你不能不学的设计模式合集`：[https://github.com/sigmaol/design-pattern](https://github.com/sigmaol/design-pattern)
+
+### 0x06.道阻且长，祝你们幸运。
