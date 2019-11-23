@@ -1,5 +1,8 @@
 package org.ko.state.demo1;
 
+/**
+ * 状态
+ */
 public abstract class CourseVideoState {
 
     protected CourseVideoContext courseVideoContext;

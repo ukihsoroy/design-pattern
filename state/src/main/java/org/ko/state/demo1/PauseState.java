@@ -1,6 +1,10 @@
 package org.ko.state.demo1;
 
-public class PauseState extends CourseVideoState  {
+/**
+ * 暂停状态
+ */
+public class PauseState extends CourseVideoState {
+
     @Override
     public void play() {
         super.courseVideoContext.setCourseVideoState(CourseVideoContext.PLAY_STATE);

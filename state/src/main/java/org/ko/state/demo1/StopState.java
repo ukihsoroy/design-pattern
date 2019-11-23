@@ -1,5 +1,8 @@
 package org.ko.state.demo1;
 
+/**
+ * 停止状态
+ */
 public class StopState extends CourseVideoState  {
     @Override
     public void play() {

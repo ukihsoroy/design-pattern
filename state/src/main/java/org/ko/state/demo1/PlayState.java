@@ -1,5 +1,8 @@
 package org.ko.state.demo1;
 
+/**
+ * 播放状态
+ */
 public class PlayState extends CourseVideoState {
     @Override
     public void play() {

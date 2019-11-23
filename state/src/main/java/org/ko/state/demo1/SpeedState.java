@@ -1,5 +1,8 @@
 package org.ko.state.demo1;
 
+/**
+ * 加速状态
+ */
 public class SpeedState extends CourseVideoState  {
     @Override
     public void play() {
