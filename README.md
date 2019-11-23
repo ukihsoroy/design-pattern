@@ -47,7 +47,7 @@
 - memento: [#备忘录模式](https://segmentfault.com/a/1190000020916494)
 - observer: [#观察者模式](https://segmentfault.com/a/1190000020887410)
 - state: [#状态模式](https://segmentfault.com/a/1190000021094565)
-- strategy: [#策略模式](https://www.jianshu.com/p/4f4e420a3107)
+- strategy: [#策略模式](https://segmentfault.com/a/1190000020746936)
 - visitor: [#访问者模式](https://segmentfault.com/a/1190000021091918)
 
 ### 0x05.道阻且长，祝你们幸运。
